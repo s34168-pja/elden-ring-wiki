@@ -165,23 +165,32 @@ p {
     border: 1px solid #2a2a2a;
     padding: 20px;
     border-radius: 4px;
-    text-align: center; /* Центрируем текст и картинку */
+    text-align: center; 
     margin-top: 20px;
 }
 .fanart-container h3 {
     color: #d4b373;
     margin-bottom: 15px;
 }
-/* Делаем картинку адаптивной */
+/* Делаем картинку адаптивной 
 .responsive-image {
-    max-width: 100%; /* Картинка не станет шире, чем блок контента */
-    height: auto;    /* Пропорции картинки не исказятся */
+    max-width: 100%; 
+    height: auto;    
     border: 2px solid #333;
     border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Красивая темная тень */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
 }
 .image-caption {
     margin-top: 10px;
     font-style: italic;
     color: #888;
+}
+.responsive-image {
+    display: block;        
+    max-width: 600px;      
+    width: 100%;           
+    height: auto;          
+    margin: 20px auto;     
+    border: 2px solid #2a2a2a; 
+    border-radius: 4px;  
 }
