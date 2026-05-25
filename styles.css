@@ -171,8 +171,7 @@ p {
 .fanart-container h3 {
     color: #d4b373;
     margin-bottom: 15px;
-}
-/* Делаем картинку адаптивной 
+} 
 .responsive-image {
     max-width: 100%; 
     height: auto;    
