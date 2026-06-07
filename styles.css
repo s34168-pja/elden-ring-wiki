@@ -1,6 +1,4 @@
-/* ==========================================
-   1. БАЗОВЫЕ СТИЛИ (ОСТАЛИСЬ БЕЗ ИЗМЕНЕНИЙ)
-   ========================================== */
+
 * {
    box-sizing: border-box;
    margin: 0;
@@ -62,7 +60,7 @@ nav ul {
   gap: 20px;
 }
 
-/* СТИЛИЗАЦИЯ ССЫЛОК В МЕНЮ КАК СТИЛЬНЫХ КНОПОК НА 26 БАЛЛОВ */
+
 nav ul li a {
   font-weight: 600;
   text-transform: uppercase;
@@ -71,16 +69,16 @@ nav ul li a {
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: #222;
-  transition: all 0.3s ease; /* Плавная анимация перехода */
+  transition: all 0.3s ease; 
 }
 
-/* Эффект :hover с анимацией изменения фона, границ и тени */
+
 nav ul li a:hover {
   color: #111111;
   background-color: #d4b373;
   border-color: #fff;
   text-decoration: none;
-  box-shadow: 0 0 10px rgba(212, 179, 115, 0.6); /* Эффект свечения кнопки */
+  box-shadow: 0 0 10px rgba(212, 179, 115, 0.6); 
 }
 
 .Main-Container {
@@ -200,7 +198,7 @@ p {
     font-size: 13px;
 }
 
-/* БЛОК СИСТЕМНЫХ ТРЕБОВАНИЙ ОБЪЕДИНЕН В ОДИН РЯД FLEXBOX */
+
 .requirements-section {
     display: flex;
     gap: 20px;
@@ -267,9 +265,7 @@ p {
     color: #888;
 }
 
-/* ==========================================
-   2. НОВЫЕ СТИЛИ: ОФОРМЛЕНИЕ ФУТЕРА (ДЛЯ АВТОРА)
-   ========================================== */
+
 footer {
     background-color: #161616;
     border-top: 2px solid #d4b373;
@@ -288,18 +284,16 @@ footer {
     color: #d4b373;
 }
 
-/* ==========================================
-   3. НОВЫЕ СТИЛИ: АДАПТИВНОСТЬ (МЕДИА-ЗАПРОСЫ НА 35 БАЛЛОВ)
-   ========================================== */
+
 @media (max-width: 768px) {
-    /* Шапка перестраивается в колонку */
+    
     .header-container {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
     
-    /* Меню становится вертикальным списком с отступами */
+   
     nav ul {
         flex-direction: column;
         gap: 10px;
@@ -311,18 +305,18 @@ footer {
         width: 100%;
     }
 
-    /* Главный контейнер переходит из двух колонок в одну */
+    
     .Main-Container {
         grid-template-columns: 1fr;
         margin: 15px auto;
     }
 
-    /* Системные требования встают друг под друга вместо ряда */
+    
     .requirements-section {
         flex-direction: column;
     }
     
-    /* Использование гибких единиц rem для шрифтов на мобильных */
+   
     h1 {
         font-size: 1.8rem;
     }
@@ -334,25 +328,23 @@ footer {
 .logo-wrapper {
     display: flex;
     align-items: center;
-    gap: 15px; /* Отступ между золотым знаком и текстом */
+    gap: 15px; 
 }
 
 .elden-logo-svg {
-    width: 50px;  /* Задает аккуратный размер знака в шапке */
+    width: 50px;  
     height: auto;
     display: inline-block;
     vertical-align: middle;
 }
 
-/* Корректировка для мобильной версии */
+
 @media (max-width: 768px) {
     .logo-wrapper {
         flex-direction: column;
         gap: 5px;
     }
-   /* ==========================================
-   4. НОВЫЕ СТИЛИ: АДАПТИВНЫЕ ВИДЕОРОЛИКИ
-   ========================================== */
+   
 .video-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -370,7 +362,7 @@ footer {
 }
 
 .video-box:hover {
-    box-shadow: 0 0 15px rgba(212, 179, 115, 0.4); /* Мягкое золотое свечение при наведении */
+    box-shadow: 0 0 15px rgba(212, 179, 115, 0.4); 
 }
 
 .video-box h3 {
@@ -381,10 +373,10 @@ footer {
     letter-spacing: 1px;
 }
 
-/* Контейнер для сохранения пропорций видео 16:9 на любых экранах */
+
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* Пропорции 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     border-radius: 4px;
