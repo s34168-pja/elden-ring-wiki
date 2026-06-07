@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Classes - Elden Ring Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Стили для красивой игровой таблицы */
+        .classes-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background-color: rgba(17, 17, 17, 0.6);
+        }
+        .classes-table th, .classes-table td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
+        .classes-table th {
+            background-color: #222;
+            color: #d4b373;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+        .classes-table tr:hover {
+            background-color: rgba(212, 179, 115, 0.1);
+        }
+        .stat-badge {
+            color: #fff;
+            font-weight: bold;
+        }
+        /* Адаптивность для таблицы на смартфонах */
+        @media (max-width: 600px) {
+            .classes-table, .classes-table tbody, .classes-table tr, .classes-table td, .classes-table th {
+                display: block;
+                width: 100%;
+            }
+            .classes-table tr {
+                margin-bottom: 15px;
+                border-bottom: 2px solid #d4b373;
+            }
+            .classes-table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+            .classes-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                width: 45%;
+                text-align: left;
+                font-weight: bold;
+                color: #d4b373;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <div class="header-container">
+        <div class="logo-wrapper">
+         <svg class="elden-logo-svg" viewBox="0 0 1000 1000" xmlns="http://w3.org">
+            <line x1="500" y1="50" x2="500" y2="950" stroke="#d4b373" stroke-width="20" stroke-linecap="round" />
+            <path d="M 250 150 Q 500 280 750 150" fill="none" stroke="#d4b373" stroke-width="20" stroke-linecap="round" />
+            <path d="M 150 550 Q 500 900 850 550" fill="none" stroke="#d4b373" stroke-width="20" stroke-linecap="round" />
+            <circle cx="500" cy="380" r="140" fill="none" stroke="#d4b373" stroke-width="16" />
+            <circle cx="430" cy="500" r="140" fill="none" stroke="#d4b373" stroke-width="16" />
+            <circle cx="570" cy="500" r="140" fill="none" stroke="#d4b373" stroke-width="16" />
+            <circle cx="500" cy="580" r="180" fill="none" stroke="#d4b373" stroke-width="18" />
+          </svg>
+          <div class="EldenRing">Elden Ring Wiki</div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="development.html">Weapons</a></li>
+            <li><a href="development.html">Bosses</a></li>
+            <li><a href="development.html">Map</a></li>
+            <li><a href="fanart.html">FanArt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="Main-Container">
+      <aside>
+        <div class="sidebar-menu">
+          <h3>Main Information</h3>
+          <ul>
+            <li><a href="development.html">About Game</a></li>
+            <li><a href="development.html">Patch-notes</a></li>
+            <li><a href="development.html">DLC</a></li>
+            <li><a href="development.html">Guides</a></li>
+          </ul>
+          <h3>Character</h3>
+          <ul>
+            <li><a href="classes.html">Main classes</a></li>
+            <li><a href="development.html">Builds</a></li>
+            <li><a href="development.html">Stats</a></li>
+            <li><a href="development.html">Appearance</a></li>
+          </ul>
+          <h3>Equipment</h3>
+          <ul>
+           <li><a href="development.html">Weapons</a></li>
+           <li><a href="development.html">Armor</a></li>
+           <li><a href="development.html">Talismans</a></li>
+           <li><a href="development.html">Magic</a></li>
+          </ul>
+        </div>
+      </aside>
+    
+      <main>
+        <h1>Starting Character Classes</h1>
+        <div class="subtitle">Choose your origin to begin exploration across the Lands Between</div>
+        
+        <p>In Elden Ring, your chosen <strong>Starting Class</strong> determines your initial attributes, allocation of combat statistics, and starting equipment. While all classes can freely transform into any build later in the game through attribute leveling, your origin provides a foundational playstyle optimized for early-game survival.</p>
+        
+        <h2>Official Archetypes Database</h2>
+        <p>Below is an analytical overview of the legendary archetypes favored by players for tactical diversity:</p>
+
+        <table class="classes-table">
+            <thead>
+                <tr>
+                    <th>Class Name</th>
+                    <th>Lore Description</th>
+                    <th>Base Level</th>
+                    <th>Key Attributes</th>
+                    <th>Starting Gear</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Class Name" style="color: #fff; font-weight: bold;">Samurai</td>
+                    <td data-label="Lore Description">A capable fighter from the distant Land of Reeds. Handled with unmatched discipline.</td>
+                    <td data-label="Base Level" class="stat-badge">Level 9</td>
+                    <td data-label="Key Attributes">Vigor (12), Dexterity (15)</td>
+                    <td data-label="Starting Gear">Uchigatana, Longbow, Bone Arrows</td>
+                </tr>
+                <tr>
+                    <td data-label="Class Name" style="color: #fff; font-weight: bold;">Astrologer</td>
+                    <td data-label="Lore Description">A scholar who reads fate within the stars. Heir to the ancient school of glintstone sorcery.</td>
+                    <td data-label="Base Level" class="stat-badge">Level 6</td>
+                    <td data-label="Key Attributes">Mind (15), Intelligence (16)</td>
+                    <td data-label="Starting Gear">Astrologer's Staff, Glintstone Pebble</td>
+                </tr>
+                <tr>
+                    <td data-label="Class Name" style="color: #fff; font-weight: bold;">Hero</td>
+                    <td data-label="Lore Description">A stalwart chieftain of a badlands tribe, descended from legendary earthen warriors.</td>
+                    <td data-label="Base Level" class="stat-badge">Level 7</td>
+                    <td data-label="Key Attributes">Vigor (14), Strength (16)</td>
+                    <td data-label="Starting Gear">Battle Axe, Large Leather Shield</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 style="margin-top: 30px;">Strategic Build Advice</h2>
+        <p>If you prefer sweeping physical attacks, the <strong>Hero</strong> provides the highest raw physical scaling properties. For swift evasion combined with ranged precision, the <strong>Samurai</strong> stands as an exceptional balanced hybrid. Players tracking mystical forces should employ the <strong>Astrologer</strong> to secure immediate access to powerful projectile sorceries.</p>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>Author: <strong>Fefelov Egor</strong> | Student ID: <strong>s34168</strong></p>
+      </div>
+    </footer>
+  </body>
+</html>
