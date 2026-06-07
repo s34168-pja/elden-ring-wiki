@@ -48,13 +48,25 @@ header {
    align-items: center;
 }
 
+/* Найдите .EldenRing и добавьте одну строчку в конец: */
 .EldenRing {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #d4b373;
+  display: inline-block; /* Чтобы ссылка правильно рассчитывала свои размеры */
 }
+
+
+
+a.EldenRing:hover {
+  color: #d4b373 !important;        
+  text-decoration: none !important; 
+  cursor: pointer;                 
+}
+
+
 
 nav ul {
   display: flex;
