@@ -11,11 +11,36 @@
     
     <header>
       <div class="header-container">
-        <div class="EldenRing">Elden Ring Wiki</div>
+        <div class="logo-wrapper">
+          <!-- Наш встроенный SVG-логотип из 5 фигур на 35 баллов -->
+         <svg class="elden-logo-svg" viewBox="0 0 1000 1000" xmlns="http://w3.org">
+  <!-- 1. Центральное вертикальное копье -->
+  <line x1="500" y1="50" x2="500" y2="950" stroke="#d4b373" stroke-width="20" stroke-linecap="round" />
+  
+  <!-- 2. Верхняя дуга -->
+  <path d="M 250 150 Q 500 280 750 150" fill="none" stroke="#d4b373" stroke-width="20" stroke-linecap="round" />
+  
+  <!-- 3. Нижняя большая дуга (чаша) -->
+  <path d="M 150 550 Q 500 900 850 550" fill="none" stroke="#d4b373" stroke-width="20" stroke-linecap="round" />
+  
+  <!-- 4. Верхнее кольцо пирамиды -->
+  <circle cx="500" cy="380" r="140" fill="none" stroke="#d4b373" stroke-width="16" />
+  
+  <!-- 5. Среднее левое кольцо -->
+  <circle cx="430" cy="500" r="140" fill="none" stroke="#d4b373" stroke-width="16" />
+  
+  <!-- 6. Среднее правое кольцо -->
+  <circle cx="570" cy="500" r="140" fill="none" stroke="#d4b373" stroke-width="16" />
+  
+  <!-- 7. Нижнее большое кольцо -->
+  <circle cx="500" cy="580" r="180" fill="none" stroke="#d4b373" stroke-width="18" />
+</svg>
+          <div class="EldenRing">Elden Ring Wiki</div>
+        </div>
         <nav>
           <ul>
-            <li><a href="#">Main Page</a></li>
-            <li><a href="#">Classes</a></li>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="classes.html">Classes</a></li>
             <li><a href="#">Weapons</a></li>
             <li><a href="#">Bosses</a></li>
             <li><a href="#">Map</a></li>
@@ -24,6 +49,7 @@
         </nav>
       </div>
     </header>
+
     
     
     <div class="Main-Container">
@@ -58,81 +84,112 @@
     
     
   <main>
-    <h1>Elden Ring wiki Guide</h1>
-    <div class="subtitle">Elden Ring Walkthrough, Magic, Bosses, Secrets, and Builds</div>
+    <h1>Elden Ring Wiki Guide</h1>
+    <div class="subtitle">Ultimate Walkthrough, Magic, Bosses, Secrets, and Character Builds</div>
     
-    <p>Welcome to the <strong>Elden Ring</strong> fan wiki from FromSoftware. Here you'll find all the information you need to explore the Betweenlands and the Shadowlands, from detailed maps to breakdowns of each boss's stats.</p>
+    <p>Welcome to the definitive <strong>Elden Ring</strong> fan encyclopedia. Developed by FromSoftware and directed by Hidetaka Miyazaki, this critically acclaimed action RPG features a massive, seamless open world crafted in close collaboration with fantasy author George R. R. Martin. Here you will find deep lore analysis, hardware statistics, and extensive database entries to guide your journey through a dark and legendary universe.</p>
     
     <h2>Knowledge Base Sections</h2>
     
     <div class="wiki-grid">
        <div class="wiki-card">
-        <h4>Character</h4>
-         <ul>
-          <li><a href="#">Character Classes</a></li>
-          <li><a href="#">Starting Relics</a></li>
-          <li><a href="#">Build calculator</a></li>
-         </ul>
+          <h4>Characters & Origins</h4>
+          <ul>
+             <li><a href="classes.html">Starting Classes</a></li>
+             <li><a href="#">Base Attributes</a></li>
+             <li><a href="#">Status Effects</a></li>
+          </ul>
        </div>
     
-     <div class="wiki-card">
-       <h4>Equipment</h4>
-       <ul>
-         <li><a href="#">Damage Types</a></li>
-         <li><a href="#">Ashes of War</a></li>
-         <li><a href="#">Sacred Shields</a></li>
-       </ul>
-     </div>
+       <div class="wiki-card">
+          <h4>Equipment & Magic</h4>
+          <ul>
+             <li><a href="#">Weapon Categories</a></li>
+             <li><a href="#">Armor Sets</a></li>
+             <li><a href="#">Spells & Incantations</a></li>
+          </ul>
+       </div>
     
-     <div class="wiki-card">
-       <h4>Game World</h4>
-       <ul>
-         <li><a href="#">Map</a></li>
-         <li><a href="#">Secrets</a></li>
-         <li><a href="#">Quests</a></li>
-       </ul>
-     </div>
+       <div class="wiki-card">
+          <h4>The Game World</h4>
+          <ul>
+             <li><a href="#">Interactive Map</a></li>
+             <li><a href="#">Boss Walkthroughs</a></li>
+             <li><a href="#">NPC Side Quests</a></li>
+          </ul>
+       </div>
     
-     <div class="wiki-card">
-       <h4>Extensions</h4>
-       <ul>
-         <li><a href="#">Shadow of the Erdtree</a></li>
-         <li><a href="#">Elden Ring Nightrein</a></li>
-         <li><a href="#">Tarnished Edition</a></li>
-       </ul>
-     </div>
-    </div>
-    
-    <h2>System requirements</h2>
-
-<div class="requirements-section">
-
-    <div class="req-box">
-        <h3>Minimal</h3>
-        <ul>
-            <li><strong>ОС:</strong> Windows 12</li>
-            <li><strong>CPU:</strong> Intel Core i9 14900KS / AMD Ryzen 9 9950x</li>
-            <li><strong>DRAM:</strong> 64 GB DDR5 6000</li>
-            <li><strong>GPU:</strong> NVIDIA RTX 5090 32 GB / RX 9070 XT 24 GB</li>
-            <li><strong>DirectX:</strong> Version 12</li>
-            <li><strong>Storage:</strong> 1 TB (SSD)</li>
-        </ul>
+       <div class="wiki-card">
+          <h4>Expansions & News</h4>
+          <ul>
+             <li><a href="#">Shadow of the Erdtree</a></li>
+             <li><a href="#">Nightreign Spin-off</a></li>
+             <li><a href="#">Patch Notes</a></li>
+          </ul>
+       </div>
     </div>
 
-    <div class="req-box recommended">
-        <h3>Recommended</h3>
-        <ul>
-            <li><strong>ОС:</strong> Windows 15 </li>
-            <li><strong>CPU:</strong> AMD Ryzen Threadripper 9995WX / Intel Xeon W9-3595X </li>
-            <li><strong>DRAM:</strong> 256 GB DDR6 9000</li>
-            <li><strong>GPU:</strong> NVIDIA Blackwell B200 192 VRAM </li>
-            <li><strong>DirectX:</strong> Version 12</li>
-            <li><strong>Storage:</strong> 10 TB (Recommended SSD)</li>
-        </ul>
+    <!-- РАЗДЕЛ 1: ГЛУБОКИЙ ЛОР МИРА -->
+    <h2>The Mythos of the Lands Between</h2>
+    <p>The Lands Between is a fantastical world governed by the laws of the Elden Ring and sustained by the golden light of the primordial Erdtree. Historically, the inhabitants of this realm were blessed by a unique golden aura visible within their eyes, representing their connection to the Greater Will. However, this age of harmony ended when the Elden Ring was shattered during an event known as the Shattering. The shards of the shattered ring, recognized as Great Runes, were claimed by the six demigod offspring of Queen Marika the Eternal.</p>
+    <p>The sudden acquisition of this immense cosmic power corrupted the demigods, warping both their minds and physical bodies into monstrous states. This drove the realm into a brutal, stalemated civil war. As an exiled Tarnished—one who lost the golden grace long ago and was banished from the realm—you are beckoned by the Guidance of Grace to return. Your ultimate objective is to cross the fog, defeat the corrupted Shardbearers, claim the Great Runes, and mend the Elden Ring to become the new Elden Lord.</p>
+
+    <!-- РАЗДЕЛ 2: РАСШИРЕННЫЕ МЕХАНИКИ ИГРЫ -->
+    <h2>Advanced Gameplay Systems & Exploration</h2>
+    <p>Elden Ring revolutionizes traditional FromSoftware mechanics by offering unprecedented strategic freedom, dynamic environmental systems, and versatile open-world combat alternatives:</p>
+    <ul>
+        <li><strong>Tactical Stealth & Visibility:</strong> Movement is enhanced by a dedicated crouching mechanic, allowing players to sneak through dense undergrowth to bypass dangerous patrols. The effectiveness of stealth is organically linked to the real-time day and night cycle. Infiltration at night reduces enemy tracking ranges but introduces unique, highly aggressive nighttime bosses like the Night's Cavalry and Deathbird.</li>
+        <li><strong>Spirit Ashes Summons:</strong> Exploration rewards players with the ashes of fallen creatures and legendary warriors. These spirits can be summoned using Focus Points (FP) during intense offline boss encounters. Each spirit possesses a distinct tactical role, such as the tanking capability of the Banished Knight or the crowd-control status effects of the Spirit Jellyfish, providing custom defensive solutions.</li>
+        <li><strong>Ashes of War & Interchanging Skills:</strong> Weapons are no longer restricted to fixed special moves. Players can discover around 100 interchangeable weapon arts called Ashes of War hidden within remote ruins. These skills allow players to dynamically alter weapon scaling properties, assigning magic, frost, lightning, or bleed attributes to craft complex hybrid playstyles.</li>
+        <li><strong>Spectral Steed Navigation:</strong> Traversing the vast overworld is accelerated by Torrent, your spectral horse. Mounted combat allows for sweeping hit-and-run attacks with heavy weapons and specialized spellcasting. Additionally, Spirit Springs enable Torrent to leap up massive vertical cliffs, uncovering hidden optional dungeons and high-tier equipment.</li>
+    </ul>
+
+    <!-- РАЗДЕЛ 3: КЛЮЧЕВЫЕ ФРАКЦИИ И БОССЫ -->
+    <h2>Major Legends and Legendary Bosses</h2>
+    <p>Progressing through the main story requires navigating massive Legacy Dungeons—traditional, intricate castle levels woven seamlessly into the open world. Each dungeon is guarded by a powerful demigod Shardbearer:</p>
+    <p>Godrick the Grafted rules over Stormveil Castle, using a horrific practice of grafting limbs onto himself to steal the strength of others. Deeper in the Carian academy lies Rennala, Queen of the Full Moon, a master of sorcery guarding the Great Rune of the Unborn. In the desolate wastes of Caelid, Starscourge Radahn holds the stars themselves in place, fighting a losing battle against the madness of the Scarlet Rot. Confronting these mythological figures requires utilizing all your discovered mechanics and builds.</p>
+    
+    <!-- РАЗДЕЛ 4: СИСТЕМНЫЕ ТРЕБОВАНИЯ -->
+    <h2>Official PC System Requirements</h2>
+    <p class="req-notice">Verified technical specifications required to optimize frame times and graphical fidelity across the Lands Between.</p>
+
+    <div class="requirements-section">
+        <div class="req-box">
+            <h3>Minimum Specifications</h3>
+            <ul>
+                <li><strong>OS:</strong> Windows 10 / Windows 11 (64-bit)</li>
+                <li><strong>Processor:</strong> Intel Core i5-8400 / AMD Ryzen 3 3300X</li>
+                <li><strong>Memory:</strong> 12 GB RAM</li>
+                <li><strong>Graphics:</strong> NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB</li>
+                <li><strong>DirectX:</strong> Version 12 (Feature Level 12.0)</li>
+                <li><strong>Storage:</strong> 60 GB available space (SSD Recommended)</li>
+            </ul>
+        </div>
+        <div class="req-box recommended">
+            <h3>Recommended Specifications</h3>
+            <ul>
+                <li><strong>OS:</strong> Windows 10 / Windows 11 (64-bit)</li>
+                <li><strong>Processor:</strong> Intel Core i7-8700K / AMD Ryzen 5 3600X</li>
+                <li><strong>Memory:</strong> 16 GB RAM</li>
+                <li><strong>Graphics:</strong> NVIDIA GeForce GTX 1070 8GB / AMD Radeon RX Vega 56 8GB</li>
+                <li><strong>DirectX:</strong> Version 12 (Feature Level 12.0)</li>
+                <li><strong>Storage:</strong> 60 GB available space (Solid State Drive)</li>
+            </ul>
+        </div>
     </div>
-</div>
   </main>
+
+
+
   
     </div>
+     <footer>
+    <div class="footer-content">
+      <p>Author: <strong>Fefelov Egor</strong> | Student ID: <strong>s34168</strong></p>
+    </div>
+  </footer>
+  
+</body>
+</html>
   </body>
 </html>
