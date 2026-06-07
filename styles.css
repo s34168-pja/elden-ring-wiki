@@ -6,15 +6,17 @@
 }
 
 body {
-   background-image: url('./bg.jpg'); /* Точка и слэш делают путь универсальным для сети и ПК */
+   background-image: url('./bg.jpg'); 
    background-attachment: fixed;    
    background-position: center top; 
    background-size: cover;          
    background-color: #111111;       
    color: #e0e0e0;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: 15px;
-   line-height: 1.6;
+   
+   font-family: 'Georgia', 'Times New Roman', Times, serif;
+   font-size: 16px; 
+   line-height: 1.7;
+   letter-spacing: 0.5px;
 }
 
 
