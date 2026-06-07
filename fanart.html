@@ -9,46 +9,82 @@
 <body>
 
     <header>
-        <div class="header-container">
-            <div class="logo">Elden Ring Wiki</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Main Page</a></li>
-                    <li><a href="fanart.html">Fanart</a></li>
-                    <li><a href="#">Classes</a></li>
-                    <li><a href="#">Weapons</a></li>
-                    <li><a href="#">Map</a></li>
-                </ul>
-            </nav>
+      <div class="header-container">
+        <div class="logo-wrapper">
+         <!-- Наш золотой SVG-логотип на максимальный балл -->
+         <svg class="elden-logo-svg" viewBox="0 0 1000 1000" xmlns="http://w3.org">
+            <line x1="500" y1="50" x2="500" y2="950" stroke="#d4b373" stroke-width="20" stroke-linecap="round" />
+            <path d="M 250 150 Q 500 280 750 150" fill="none" stroke="#d4b373" stroke-width="20" stroke-linecap="round" />
+            <path d="M 150 550 Q 500 900 850 550" fill="none" stroke="#d4b373" stroke-width="20" stroke-linecap="round" />
+            <circle cx="500" cy="380" r="140" fill="none" stroke="#d4b373" stroke-width="16" />
+            <circle cx="430" cy="500" r="140" fill="none" stroke="#d4b373" stroke-width="16" />
+            <circle cx="570" cy="500" r="140" fill="none" stroke="#d4b373" stroke-width="16" />
+            <circle cx="500" cy="580" r="180" fill="none" stroke="#d4b373" stroke-width="18" />
+          </svg>
+          <div class="EldenRing">Elden Ring Wiki</div>
         </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="development.html">Weapons</a></li>
+            <li><a href="development.html">Bosses</a></li>
+            <li><a href="development.html">Map</a></li>
+            <li><a href="fanart.html">FanArt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <div class="main-container">
+    <!-- Изменили имя класса на Main-Container с большой буквы, чтобы работал прозрачный фон -->
+    <div class="Main-Container">
         
         <aside>
             <div class="sidebar-menu">
-                <h3>General information</h3>
+                <h3>Main Information</h3>
                 <ul>
-                    <li><a href="index.html">To main page</a></li>
-                    <li><a href="#">Patch-notes</a></li>
+                    <li><a href="index.html">About Game</a></li>
+                    <li><a href="development.html">Patch-notes</a></li>
+                    <li><a href="development.html">DLC</a></li>
+                    <li><a href="development.html">Guides</a></li>
+                </ul>
+                <h3>Character</h3>
+                <ul>
+                    <li><a href="classes.html">Main classes</a></li>
+                    <li><a href="development.html">Builds</a></li>
+                    <li><a href="development.html">Stats</a></li>
+                    <li><a href="development.html">Appearance</a></li>
+                </ul>
+                <h3>Equipment</h3>
+                <ul>
+                    <li><a href="development.html">Weapons</a></li>
+                    <li><a href="development.html">Armor</a></li>
+                    <li><a href="development.html">Talismans</a></li>
+                    <li><a href="development.html">Magic</a></li>
                 </ul>
             </div>
         </aside>
 
         <main>
             <h1>Fanart Gallery</h1>
-            <div class="subtitle">Elden Ring</div>
+            <div class="subtitle">Community Masterpieces of the Lands Between</div>
             
-            <p>FanArt</p>
+            <p>Explore breathtaking community artworks inspired by FromSoftware's dark universe. Each canvas details legendary encounters and mythological figures from the game lore.</p>
             
             <div class="fanart-container">
-                <h3>Work</h3>
-                <img src="https://uploads.onecompiler.io/44qa46mrt/44qa79uee/Rellana_fa.png" alt="Work Elden Ring" class="responsive-image">
-                <p class="image-caption">Rellana</p>
+                <h3>Rellana, Twin Moon Knight</h3>
+                <img src="https://uploads.onecompiler.io/44qa46mrt/44qa79uee/Rellana_fa.png" alt="Rellana Fan Art" class="responsive-image">
+                <p class="image-caption">Artistic representation of the formidable Carian princess who abandoned her lineage to follow Messmer the Impaler.</p>
             </div>
         </main>
         
     </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>Author: <strong>Fefelov Egor</strong> | Student ID: <strong>s34168</strong></p>
+      </div>
+    </footer>
 
 </body>
 </html>
